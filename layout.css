@@ -1,0 +1,62 @@
+.nav {
+    height: 100px;
+    display: flex;
+    background-color: aqua;
+}
+.nav ul {
+    display: flex;
+}
+
+.nav ul  li {
+    padding-right:50px ;
+    padding-left: 20px;
+    list-style-type: none;
+    border-right: 2px solid black;
+}
+
+nav ul li:hover .dropdown {
+    background-color: blue;
+    display: block;
+    position: absolute;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+}
+
+
+.content {
+    height: 100%;
+    flex:0.7;
+    background-color: aquamarine;
+}
+.sidebar{
+    flex:0.3;
+    background-color: blueviolet;
+
+}
+
+.footer{
+    height: 200px;
+    background-color: tomato;
+}
+
+@media  screen and (min-width:480) and (max-width:780px){
+    .nav{
+        display:none;
+        max-width: 100%;
+    }
+    .sidebar{
+        max-width: 100%;
+
+    }
+
+    .content{
+        max-width: 100%;
+    }
+    .footer{
+        max-width: 100%;
+    }
+
+}
